@@ -19,8 +19,8 @@ class TestCreateContactsPage(BaseTest):
         manager_name = self.create_contact_page.choose_account_manager()
         expected_contact = [first_name + ' ' + last_name, title, email, manager_name]
         self.create_contact_page.click_btn_save()
-        full_name = self.show_contact_page.extract_full_name()
-        expected_title = self.show_contact_page.extract_title()
+        full_name = self.show_contact_page.extract_full_name_contact()
+        expected_title = self.show_contact_page.extract_title_contact()
         assert full_name in expected_contact, \
             (f"Show contact page hasn't expected full name: {first_name + ' ' + last_name}."
              f"Actual full name: {full_name}.")

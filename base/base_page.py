@@ -80,7 +80,7 @@ class BasePage:
         """This method gets element text"""
         return self.element_is_visible(locator, timeout).text
 
-    def make_screenshot(self, screenshot_name):
+    def make_screenshot(self, screenshot_name) -> None:
         """This method makes screenshot and attachments on allure-report"""
         allure.attach(
             body=self.driver.get_screenshot_as_png(),

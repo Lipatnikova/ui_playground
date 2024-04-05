@@ -7,18 +7,18 @@ from config.links import Links
 
 class MainPage(BasePage):
     def open_main_page(self) -> None:
-        with allure.step("Открыть страницу qa-playground"):
+        with allure.step('Открыть страницу qa-playground'):
             self.open(Links.HOST)
 
     def click_tab_contacts(self) -> None:
-        self.click_element(Locator.TAB_CONTACTS)
+        with allure.step('Нажать на вкладку CONTACTS'):
+            self.click_element(Locator.TAB_CONTACTS)
 
     # reset_bd
     def click_reset_bd(self) -> None:
-        self.click_element(Locator.BTN_RESET_BD)
+        with allure.step('Нажать на значок Очистить базу данных Reset_bd'):
+            self.click_element(Locator.BTN_RESET_BD)
 
     def click_reset_bd_confirm(self) -> None:
-        self.click_element(Locator.BTN_CONFIRM)
-
-    def click_reset_bd_cancel(self) -> None:
-        self.click_element(Locator.BTN_CANCEL)
+        with allure.step('Подтвердить сброс базы данных (нажать кнопку CONFIRM'):
+            self.click_element(Locator.BTN_CONFIRM)
