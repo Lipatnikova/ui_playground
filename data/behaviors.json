@@ -2,13 +2,13 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "Добавление нового контакта в список менеджера",
-    "uid" : "1de1b312e8efe51d",
+    "uid" : "cc7a00465b6f3cdf",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1712315962391,
-      "stop" : 1712315966821,
-      "duration" : 4430
+      "start" : 1712346044396,
+      "stop" : 1712346049360,
+      "duration" : 4964
     },
     "flaky" : false,
     "newFailed" : false,
