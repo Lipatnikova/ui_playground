@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "01d08e60991f",
+    "children" : [ {
+      "name" : "1-MainThread",
+      "children" : [ {
+        "name" : "Добавление нового контакта в список менеджера",
+        "uid" : "1de1b312e8efe51d",
+        "parentUid" : "ab07a44fcaa4c3e35321b74dc1698838",
+        "status" : "passed",
+        "time" : {
+          "start" : 1712315962391,
+          "stop" : 1712315966821,
+          "duration" : 4430
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ab07a44fcaa4c3e35321b74dc1698838"
+    } ],
+    "uid" : "8ca6f20f3eb808d0e6bf11ed187ba523"
+  } ],
+  "name" : "timeline"
+}

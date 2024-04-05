@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "test_create_contacts",
+      "children" : [ {
+        "name" : "TestCreateContactsPage",
+        "children" : [ {
+          "name" : "Добавление нового контакта в список менеджера",
+          "uid" : "1de1b312e8efe51d",
+          "parentUid" : "dab90bf7a5f10fde1252c24b7ce1c0f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1712315962391,
+            "stop" : 1712315966821,
+            "duration" : 4430
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "dab90bf7a5f10fde1252c24b7ce1c0f1"
+      } ],
+      "uid" : "d65fde41963615ea7fb73e3d69f99a9b"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ],
+  "name" : "suites"
+}

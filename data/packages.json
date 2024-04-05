@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "tests.test_create_contacts",
+    "children" : [ {
+      "name" : "Добавление нового контакта в список менеджера",
+      "uid" : "1de1b312e8efe51d",
+      "parentUid" : "9a617378d230b88f01c1d84bc0cf9fca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1712315962391,
+        "stop" : 1712315966821,
+        "duration" : 4430
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "tests.test_create_contacts"
+  } ],
+  "name" : "packages"
+}

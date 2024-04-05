@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Apr 05 11:19:22 GMT 2024","Fri Apr 05 11:19:26 GMT 2024","4430","tests","test_create_contacts","TestCreateContactsPage","","","Добавление нового контакта в список менеджера",""
