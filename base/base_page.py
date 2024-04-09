@@ -1,5 +1,9 @@
 import allure
 from allure_commons.types import AttachmentType
+from typing import List
+import random
+
+from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait as Wait
@@ -39,7 +43,7 @@ class BasePage:
 
     def element_is_visible(
             self, locator: WebElement or tuple[str, str], timeout: int = Config.WAIT_TIMEOUT
-                ) -> WebElement:
+    ) -> WebElement:
         """
         This method expects to verify that the element is present in the DOM tree, visible, and displayed on the page.
         Visibility means that the element is not only displayed but also has a height and width greater than 0.
@@ -48,6 +52,16 @@ class BasePage:
         """
         self.go_to_element(self.element_is_present(locator))
         return Wait(self.driver, timeout).until(EC.visibility_of_element_located(locator))
+
+    def elements_are_visible(
+            self, locator: WebElement or tuple[str, str], timeout: int = Config.WAIT_TIMEOUT) -> List[WebElement]:
+        """
+        This method expects to verify that the elements are present in the DOM tree, visible and displayed on the page.
+        Visibility means that the elements are not only displayed but also have a height and width greater than 0.
+        Locator - is used to find the elements.
+        Timeout - the duration it will wait for.
+        """
+        return Wait(self.driver, timeout).until(EC.visibility_of_all_elements_located(locator))
 
     def go_to_element(self, element: WebElement or tuple[str, str]) -> None:
         """ This method scrolls the page to the selected element, making it visible to the user. """
@@ -87,3 +101,18 @@ class BasePage:
             name=screenshot_name,
             attachment_type=AttachmentType.PNG
         )
+
+    def extract_names_elements(self, locator: WebElement or tuple[str, str]) -> List[str]:
+        """Extracts names of elements found by the given locator"""
+        elements = self.elements_are_visible(locator)
+        return [element.text for element in elements]
+
+    @staticmethod
+    def random_choice(items):
+        """This method makes a random choice from elements"""
+        return random.choice(items)
+
+    def click_random_element(self, locator: WebElement or tuple[str, str]) -> None:
+        """This method makes a random choice from elements and clicks the random element"""
+        elements = self.elements_are_visible(locator)
+        self.random_choice(elements).click()
