@@ -35,3 +35,35 @@ class TestShowContact(BaseTest):
             assert expected_text in text_last_notes, \
                 (f'Note with {expected_text} was not added to main page.'
                  f'Actual text by My Latest Notes list: {text_last_notes}')
+
+    sort_by = ['last_name', 'first_name', 'last_seen']
+
+    @pytest.mark.regression_tests
+    @allure.testcase('UI-5')
+    @allure.title('Экспорт списка контактов в файл формата .csv')
+    @allure.description('''
+    Цель задачи: протестировать функциональность экспорта выбранных контактов в файл CSV, 
+    позволяющее передавать определенные наборы контактов в другие системы CRM.''')
+    @pytest.mark.parametrize('sort_by', sort_by)
+    def test_export_contact_list_to_csv_file(self, sort_by):
+        self.main_page.open_main_page()
+        self.main_page.click_tab_contacts()
+        self.contacts_page.click_sort_by()
+        self.contacts_page.choose_data_sort(sort_by)
+        self.contacts_page.wait_for_sorting()
+        self.contacts_page.click_export()
+        self.file_handler.wait_for_file_downloads()
+        if sort_by == 'first_name':
+            first_names = self.file_handler.extract_first_names_by_csv()
+            with allure.step('Проверить, что в выгруженном файле .csv была применена сортировка по first_name'):
+                assert first_names == sorted(first_names)
+        elif sort_by == 'last_name':
+            last_names = self.file_handler.extract_last_names_by_csv()
+            with allure.step('Проверить, что в выгруженном файле .csv была применена сортировка по last_name'):
+                assert last_names == sorted(last_names)
+        elif sort_by == 'last_seen':
+            last_seen = self.file_handler.extract_last_seen_by_csv()
+            with allure.step('Проверить, что в выгруженном файле .csv была применена сортировка по last_seen'):
+                assert last_seen == sorted(last_seen)
+
+        self.file_handler.delete_downloaded_file()

@@ -1,11 +1,19 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+import os
 
 
 @pytest.fixture(scope="function", autouse=True)
 def driver(request):
+    download_directory = os.path.join(os.path.dirname(os.getcwd()), "data", "downloads")
+    if not os.path.exists(download_directory):
+        os.makedirs(download_directory)
     options = Options()
+    prefs = {
+        "download.default_directory": download_directory
+    }
+    options.add_experimental_option("prefs", prefs)
     options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
