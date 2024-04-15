@@ -3,7 +3,6 @@ from allure_commons.types import AttachmentType
 from typing import List
 import random
 
-from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait as Wait
