@@ -1,0 +1,88 @@
+{
+  "uid" : "d8c28105d89d1485",
+  "name" : "Экспорт списка контактов в файл формата .csv",
+  "fullName" : "tests.test_show_contact_page.TestShowContact#test_export_contact_list_to_csv_file",
+  "historyId" : "99557cc0dfaae86996070da8dd058cef",
+  "time" : {
+    "start" : 1713293685588,
+    "stop" : 1713293685588,
+    "duration" : 0
+  },
+  "description" : "\n    Цель задачи: протестировать функциональность экспорта выбранных контактов в файл CSV, \n    позволяющее передавать определенные наборы контактов в другие системы CRM.",
+  "descriptionHtml" : "<pre><code>Цель задачи: протестировать функциональность экспорта выбранных контактов в файл CSV, \nпозволяющее передавать определенные наборы контактов в другие системы CRM.\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('/usr/workspace/tests/test_show_contact_page.py', 41, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1713293673766,
+      "stop" : 1713293673787,
+      "duration" : 21
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip"
+  }, {
+    "name" : "tag",
+    "value" : "regression_tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_show_contact_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestShowContact"
+  }, {
+    "name" : "host",
+    "value" : "a86c27c30bfe"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_show_contact_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sort_by",
+    "value" : "'first_name'"
+  } ],
+  "links" : [ {
+    "name" : "UI-5",
+    "url" : "UI-5",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.skip", "regression_tests" ]
+  },
+  "source" : "d8c28105d89d1485.json",
+  "parameterValues" : [ "'first_name'" ]
+}
