@@ -1,24 +1,21 @@
+import os
 from typing import List
 
 import allure
-import os
 
-from helpers.file_waiter import wait_for_file
+from config.config import Config
 from helpers.file_reader import FileReader
+from helpers.file_waiter import wait_for_file
 
 
 class FileHandler(FileReader):
     def __init__(self):
-        self.path_to_directory = os.path.join(os.path.dirname(os.getcwd()), "data", "downloads")
+        self.path_to_directory = Config.DOWNLOAD_DIR
         self.path_to_file = os.path.join(self.path_to_directory, "contacts.csv")
-
-    @staticmethod
-    def file_created_callback(driver):
-        driver.quit()
 
     def wait_for_file_downloads(self) -> None:
         with allure.step('Подождать загрузки файла "contacts.csv" в директорию ../data/downloads/'):
-            wait_for_file("contacts.csv", self.path_to_directory, self.file_created_callback)
+            wait_for_file("contacts.csv", self.path_to_directory)
 
     def extract_first_names_by_csv(self) -> List[str]:
         with allure.step('Получить из скаченного файла .csv значения из столбца first_name'):
