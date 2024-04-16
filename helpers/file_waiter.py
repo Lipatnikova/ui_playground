@@ -1,32 +1,21 @@
 import os
-import threading
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
+import time
 
 
-class FileWaiter(FileSystemEventHandler):
-    def __init__(self, filename, callback):
-        super().__init__()
-        self.filename = filename
-        self.callback = callback
+def wait_for_file(filename, directory, timeout=3):
+    """
+    Ждет появления файла в указанной директории.
 
-    def on_created(self, event):
-        if event.src_path.endswith(self.filename):
-            self.callback()
-            observer.stop()
-            observer.join()
-
-
-def wait_for_file(filename, directory, callback):
+    Аргументы:
+    filename (str): Имя файла, который нужно дождаться.
+    directory (str): Путь к директории, в которой нужно искать файл.
+    timeout (int, optional): Время ожидания в секундах. Если файл не будет
+        найден в течение этого времени, будет выведена ошибка.
+    """
     file_path = os.path.join(directory, filename)
-    event = threading.Event()
-
-    observer = Observer()
-    observer.schedule(FileWaiter(filename, callback), path=directory)
-    observer.start()
-    try:
-        while not os.path.exists(file_path):
-            event.wait(1)
-    finally:
-        observer.stop()
-        observer.join()
+    start_time = time.time()
+    while not os.path.exists(file_path):
+        if timeout is not None and time.time() - start_time > timeout:
+            print(f"Ошибка: файл {filename} НЕ найден в директории {directory} в течение {timeout} секунд.")
+            return
+    print(f"Файл {filename} найден в директории {directory}")

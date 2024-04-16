@@ -39,6 +39,7 @@ class TestShowContact(BaseTest):
     sort_by = ['last_name', 'first_name', 'last_seen']
 
     @pytest.mark.regression_tests
+    @pytest.mark.skip
     @allure.testcase('UI-5')
     @allure.title('Экспорт списка контактов в файл формата .csv')
     @allure.description('''

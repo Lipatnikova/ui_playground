@@ -1,12 +1,15 @@
+import os
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import os
+
+from config.config import Config
 
 
 @pytest.fixture(scope="function", autouse=True)
 def driver(request):
-    download_directory = os.path.join(os.path.dirname(os.getcwd()), "data", "downloads")
+    download_directory = Config.DOWNLOAD_DIR
     if not os.path.exists(download_directory):
         os.makedirs(download_directory)
     options = Options()
