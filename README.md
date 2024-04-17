@@ -17,5 +17,7 @@
 ## Как работать с репозиторием в Git Actions:
 
 - Перейти во вкладку Actions репозитория. 
-- Выбрать All workflows -> Automated tests with Allure ("This workflow has a workflow_dispatch event trigger"). 
+- Выбрать All workflows -> UI Tests("This workflow has a workflow_dispatch event trigger"). 
+- Нажать на кнопку Run workflow.
+- Выбрать Branch: main.
 - Нажать на кнопку Run workflow.
