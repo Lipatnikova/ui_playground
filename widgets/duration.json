@@ -1,51 +1,51 @@
 [ {
-  "uid" : "f497721d88fab96e",
+  "uid" : "780ebe6dc4e6a603",
   "name" : "Экспорт списка контактов в файл формата .csv",
   "time" : {
-    "start" : 1713347927100,
-    "stop" : 1713347927100,
+    "start" : 1713348548371,
+    "stop" : 1713348548371,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "7fae2207b0b10f36",
-  "name" : "Добавление нового контакта в список менеджера",
-  "time" : {
-    "start" : 1713347926324,
-    "stop" : 1713347926324,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "2cb869e579e762c4",
+  "uid" : "d6bfdf6faf5ec9da",
   "name" : "Добавление заметки к контакту из списка контактов менеджера",
   "time" : {
-    "start" : 1713347926776,
-    "stop" : 1713347926776,
+    "start" : 1713348542404,
+    "stop" : 1713348548308,
+    "duration" : 5904
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e5bfcb26349700d4",
+  "name" : "Экспорт списка контактов в файл формата .csv",
+  "time" : {
+    "start" : 1713348548370,
+    "stop" : 1713348548370,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "4467bca9e865b9a7",
+  "uid" : "b78b653cf10c81ad",
   "name" : "Экспорт списка контактов в файл формата .csv",
   "time" : {
-    "start" : 1713347927101,
-    "stop" : 1713347927101,
+    "start" : 1713348548369,
+    "stop" : 1713348548369,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "bad008e5ee8422b4",
-  "name" : "Экспорт списка контактов в файл формата .csv",
+  "uid" : "63db0b8423ad8cd5",
+  "name" : "Добавление нового контакта в список менеджера",
   "time" : {
-    "start" : 1713347927098,
-    "stop" : 1713347927098,
-    "duration" : 0
+    "start" : 1713348536888,
+    "stop" : 1713348541934,
+    "duration" : 5046
   },
-  "status" : "skipped",
+  "status" : "broken",
   "severity" : "normal"
 } ]

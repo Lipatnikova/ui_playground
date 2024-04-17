@@ -3,22 +3,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
       "children" : [ {
         "name" : "Добавление нового контакта в список менеджера",
-        "uid" : "7fae2207b0b10f36",
-        "parentUid" : "6a28f92c5c8a4cadb904435561a27c65",
+        "uid" : "63db0b8423ad8cd5",
+        "parentUid" : "d39bf102e1e5bf5134ee723b8fd3f516",
         "status" : "broken",
         "time" : {
-          "start" : 1713347926324,
-          "stop" : 1713347926324,
-          "duration" : 0
+          "start" : 1713348536888,
+          "stop" : 1713348541934,
+          "duration" : 5046
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "6a28f92c5c8a4cadb904435561a27c65"
+      "uid" : "d39bf102e1e5bf5134ee723b8fd3f516"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],

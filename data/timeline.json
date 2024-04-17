@@ -1,43 +1,17 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "8ca9fec32f2c",
+    "name" : "bd59f708e722",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
-        "name" : "Добавление нового контакта в список менеджера",
-        "uid" : "7fae2207b0b10f36",
-        "parentUid" : "e379adfa55f70a16c3d8cbe61ab99cb6",
-        "status" : "broken",
-        "time" : {
-          "start" : 1713347926324,
-          "stop" : 1713347926324,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Добавление заметки к контакту из списка контактов менеджера",
-        "uid" : "2cb869e579e762c4",
-        "parentUid" : "e379adfa55f70a16c3d8cbe61ab99cb6",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1713347926776,
-          "stop" : 1713347926776,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Экспорт списка контактов в файл формата .csv",
-        "uid" : "f497721d88fab96e",
-        "parentUid" : "e379adfa55f70a16c3d8cbe61ab99cb6",
+        "uid" : "e5bfcb26349700d4",
+        "parentUid" : "27dc6b4d7d91fd8c58a2f56104053723",
         "status" : "skipped",
         "time" : {
-          "start" : 1713347927100,
-          "stop" : 1713347927100,
+          "start" : 1713348548370,
+          "stop" : 1713348548370,
           "duration" : 0
         },
         "flaky" : false,
@@ -45,34 +19,60 @@
         "parameters" : [ "'first_name'" ]
       }, {
         "name" : "Экспорт списка контактов в файл формата .csv",
-        "uid" : "bad008e5ee8422b4",
-        "parentUid" : "e379adfa55f70a16c3d8cbe61ab99cb6",
+        "uid" : "780ebe6dc4e6a603",
+        "parentUid" : "27dc6b4d7d91fd8c58a2f56104053723",
         "status" : "skipped",
         "time" : {
-          "start" : 1713347927098,
-          "stop" : 1713347927098,
+          "start" : 1713348548371,
+          "stop" : 1713348548371,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'last_seen'" ]
+      }, {
+        "name" : "Добавление нового контакта в список менеджера",
+        "uid" : "63db0b8423ad8cd5",
+        "parentUid" : "27dc6b4d7d91fd8c58a2f56104053723",
+        "status" : "broken",
+        "time" : {
+          "start" : 1713348536888,
+          "stop" : 1713348541934,
+          "duration" : 5046
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Экспорт списка контактов в файл формата .csv",
+        "uid" : "b78b653cf10c81ad",
+        "parentUid" : "27dc6b4d7d91fd8c58a2f56104053723",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713348548369,
+          "stop" : 1713348548369,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'last_name'" ]
       }, {
-        "name" : "Экспорт списка контактов в файл формата .csv",
-        "uid" : "4467bca9e865b9a7",
-        "parentUid" : "e379adfa55f70a16c3d8cbe61ab99cb6",
+        "name" : "Добавление заметки к контакту из списка контактов менеджера",
+        "uid" : "d6bfdf6faf5ec9da",
+        "parentUid" : "27dc6b4d7d91fd8c58a2f56104053723",
         "status" : "skipped",
         "time" : {
-          "start" : 1713347927101,
-          "stop" : 1713347927101,
-          "duration" : 0
+          "start" : 1713348542404,
+          "stop" : 1713348548308,
+          "duration" : 5904
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'last_seen'" ]
+        "parameters" : [ ]
       } ],
-      "uid" : "e379adfa55f70a16c3d8cbe61ab99cb6"
+      "uid" : "27dc6b4d7d91fd8c58a2f56104053723"
     } ],
-    "uid" : "e408f8da83b6a268a54f8233f806c466"
+    "uid" : "1bacc8c9739fe626a0a045f0a9715ad9"
   } ],
   "name" : "timeline"
 }

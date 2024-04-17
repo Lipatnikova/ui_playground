@@ -1,11 +1,11 @@
 {
-  "uid" : "bad008e5ee8422b4",
+  "uid" : "780ebe6dc4e6a603",
   "name" : "Экспорт списка контактов в файл формата .csv",
   "fullName" : "tests.test_show_contact_page.TestShowContact#test_export_contact_list_to_csv_file",
-  "historyId" : "086d7665ac96da8e464e3d164b755ce3",
+  "historyId" : "ed6359e7d436eb5010e28c3d52cc1d39",
   "time" : {
-    "start" : 1713347927098,
-    "stop" : 1713347927098,
+    "start" : 1713348548371,
+    "stop" : 1713348548371,
     "duration" : 0
   },
   "description" : "\n    Цель задачи: протестировать функциональность экспорта выбранных контактов в файл CSV, \n    позволяющее передавать определенные наборы контактов в другие системы CRM.",
@@ -18,8 +18,8 @@
   "beforeStages" : [ {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1713347926325,
-      "stop" : 1713347926345,
+      "start" : 1713348536489,
+      "stop" : 1713348536509,
       "duration" : 20
     },
     "status" : "passed",
@@ -49,7 +49,7 @@
     "value" : "TestShowContact"
   }, {
     "name" : "host",
-    "value" : "8ca9fec32f2c"
+    "value" : "bd59f708e722"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -68,7 +68,7 @@
   } ],
   "parameters" : [ {
     "name" : "sort_by",
-    "value" : "'last_name'"
+    "value" : "'last_seen'"
   } ],
   "links" : [ {
     "name" : "UI-5",
@@ -85,24 +85,33 @@
       "statistic" : {
         "failed" : 0,
         "broken" : 0,
-        "skipped" : 2,
+        "skipped" : 3,
         "passed" : 0,
         "unknown" : 0,
-        "total" : 2
+        "total" : 3
       },
       "items" : [ {
-        "uid" : "84b7934fda7c451f",
+        "uid" : "4467bca9e865b9a7",
         "status" : "skipped",
         "statusDetails" : "Skipped: unconditional skip",
         "time" : {
-          "start" : 1713293685587,
-          "stop" : 1713293685587,
+          "start" : 1713347927101,
+          "stop" : 1713347927101,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "ae4e6921ec5497c4",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: unconditional skip",
+        "time" : {
+          "start" : 1713293685589,
+          "stop" : 1713293685589,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ "@pytest.mark.skip", "regression_tests" ]
   },
-  "source" : "bad008e5ee8422b4.json",
-  "parameterValues" : [ "'last_name'" ]
+  "source" : "780ebe6dc4e6a603.json",
+  "parameterValues" : [ "'last_seen'" ]
 }
