@@ -7,7 +7,8 @@ from base.base_test import BaseTest
 class TestShowContact(BaseTest):
 
     @pytest.mark.regression_tests
-    @pytest.mark.xfail
+    @pytest.mark.xfail(reason="after click tab Dashboard msg: 'Something went wrong "
+                              "A client error occurred and your request couldn't be completed.'")
     @allure.testcase('UI-2')
     @allure.title('Добавление заметки к контакту из списка контактов менеджера')
     @allure.description('''
