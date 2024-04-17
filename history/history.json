@@ -3,12 +3,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 2,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bad008e5ee8422b4",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1713347927098,
+        "stop" : 1713347927098,
+        "duration" : 0
+      }
+    }, {
       "uid" : "84b7934fda7c451f",
       "status" : "skipped",
       "statusDetails" : "Skipped: unconditional skip",
@@ -22,13 +31,22 @@
   "a014a10dde751d424ca48a7162eae47e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "7fae2207b0b10f36",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1713347926324,
+        "stop" : 1713347926324,
+        "duration" : 0
+      }
+    }, {
       "uid" : "599c8f7f534b33f9",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
@@ -59,12 +77,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 2,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4467bca9e865b9a7",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1713347927101,
+        "stop" : 1713347927101,
+        "duration" : 0
+      }
+    }, {
       "uid" : "ae4e6921ec5497c4",
       "status" : "skipped",
       "statusDetails" : "Skipped: unconditional skip",
@@ -79,12 +106,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 2,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f497721d88fab96e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1713347927100,
+        "stop" : 1713347927100,
+        "duration" : 0
+      }
+    }, {
       "uid" : "d8c28105d89d1485",
       "status" : "skipped",
       "statusDetails" : "Skipped: unconditional skip",
@@ -99,12 +135,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 2,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2cb869e579e762c4",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL after click tab Dashboard msg: 'Something went wrong A client error occurred and your request couldn't be completed.'\n\nselenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1713347926776,
+        "stop" : 1713347926776,
+        "duration" : 0
+      }
+    }, {
       "uid" : "868673ed905139b5",
       "status" : "skipped",
       "statusDetails" : "XFAIL\n\nAssertionError: Note with Bank million stand anything up policy paper happy century happen issue identify spring. was not added to main page.Actual text by My Latest Notes list: ['Qui error facere nihil accusamus nisi rerum corrupti facere. Magnam ad optio tempora. Officia nobis ratione voluptatem. Eveniet quas occaecati quibusdam. Dolores fugit itaque harum. Et deserunt aliquid itaque necessitatibus possimus hic rerum. Nihil rem temporibus. Unde sunt sunt itaque illum animi fugiat perspiciatis consequatur. Et quis velit odio doloremque eveniet error et optio quas. Nulla vitae dolores optio dolorem nulla. Quibusdam sunt vel numquam quam et et aut. Ut sed pariatur quia. Iste nihil voluptas nobis voluptas corrupti sed. Illo modi alias a praesentium tempore nobis dolore veritatis. Error quasi laborum id necessitatibus dolorem qui molestias porro. Commodi omnis sint eum at. Itaque quibusdam incidunt non sit. Numquam quam autem. Mollitia facilis explicabo ut. Ea qui nisi enim aut velit.', 'Sunt id dolore et. Repellat aut facilis sequi qui voluptatem aut. Fugit aut architecto sint sed ducimus eos ab.', 'Rerum perferendis iste quos rerum officiis quae atque repellat numquam. Deleniti quam molestiae exercitationem. In sunt natus et aliquid animi aut. Facere molestias necessitatibus perferendis blanditiis qui animi. Velit nemo corporis eaque cupiditate. Consectetur voluptas numquam rerum. Perferendis delectus dignissimos culpa repellat id qui deserunt vitae. Expedita dolorem tempora reiciendis sed dolores ut sit cum dolor. Reiciendis ipsa illum vero corrupti voluptatum aut. Nemo amet vitae vitae quod sint possimus blanditiis earum. Nam eaque et.', 'Incidunt ad omnis quos necessitatibus vero debitis. Culpa dicta optio. Officiis et labore laudantium eos qui. Totam necessitatibus voluptas ipsam vitae. Reprehenderit ut consectetur beatae sit odit dolores quia. Ratione fuga voluptatibus voluptatem qui facere impedit. Earum ut in eveniet quis ad. Aliquam tenetur fugit reprehenderit cum sint distinctio suscipit. Rerum quasi aut voluptatem aut maxime voluptates repellat ut. Exercitationem harum dicta quis. Excepturi doloribus mollitia illum. Quia qui nisi id corrupti molestiae perferendis sit distinctio possimus. Quam perferendis molestiae et recusandae tempora facilis. Rerum repellat id sint sequi. Doloribus explicabo impedit.', 'Autem voluptas nisi placeat aliquam labore rem. Delectus iusto et fugiat labore corrupti quia expedita molestiae. Est atque nihil cupiditate. Sunt dolorum qui quae aut ex voluptate. Id voluptas velit. Totam architecto sit eveniet et ex qui sunt. Ea ratione omnis. Voluptatibus earum sint omnis dolores reprehenderit quia assumenda. Quo vel veritatis. Minus quod voluptatem quaerat consequatur. Nihil et ut temporibus culpa in impedit necessitatibus ut quis. In ut perferendis ut aut consectetur aperiam. Rerum ratione error et non tempore sint. Suscipit ut maiores expedita. Veniam corporis quia excepturi ipsum et accusantium mollitia totam nobis. Aut nihil sequi doloribus praesentium facilis.']\nassert 'Bank million stand anything up policy paper happy century happen issue identify spring.' in ['Qui error facere nihil accusamus nisi rerum corrupti facere. Magnam ad optio tempora. Officia nobis ratione voluptatem. Eveniet quas occaecati quibusdam. Dolores fugit itaque harum. Et deserunt aliquid itaque necessitatibus possimus hic rerum. Nihil rem temporibus. Unde sunt sunt itaque illum animi fugiat perspiciatis consequatur. Et quis velit odio doloremque eveniet error et optio quas. Nulla vitae dolores optio dolorem nulla. Quibusdam sunt vel numquam quam et et aut. Ut sed pariatur quia. Iste nihil voluptas nobis voluptas corrupti sed. Illo modi alias a praesentium tempore nobis dolore veritatis. Error quasi laborum id necessitatibus dolorem qui molestias porro. Commodi omnis sint eum at. Itaque quibusdam incidunt non sit. Numquam quam autem. Mollitia facilis explicabo ut. Ea qui nisi enim aut velit.', 'Sunt id dolore et. Repellat aut facilis sequi qui voluptatem aut. Fugit aut architecto sint sed ducimus eos ab.', 'Rerum perferendis iste quos rerum officiis quae atque repellat numquam. Deleniti quam molestiae exercitationem. In sunt natus et aliquid animi aut. Facere molestias necessitatibus perferendis blanditiis qui animi. Velit nemo corporis eaque cupiditate. Consectet...ae sit odit dolores quia. Ratione fuga voluptatibus voluptatem qui facere impedit. Earum ut in eveniet quis ad. Aliquam tenetur fugit reprehenderit cum sint distinctio suscipit. Rerum quasi aut voluptatem aut maxime voluptates repellat ut. Exercitationem harum dicta quis. Excepturi doloribus mollitia illum. Quia qui nisi id corrupti molestiae perferendis sit distinctio possimus. Quam perferendis molestiae et recusandae tempora facilis. Rerum repellat id sint sequi. Doloribus explicabo impedit.', 'Autem voluptas nisi placeat aliquam labore rem. Delectus iusto et fugiat labore corrupti quia expedita molestiae. Est atque nihil cupiditate. Sunt dolorum qui quae aut ex voluptate. Id voluptas velit. Totam architecto sit eveniet et ex qui sunt. Ea ratione omnis. Voluptatibus earum sint omnis dolores reprehenderit quia assumenda. Quo vel veritatis. Minus quod voluptatem quaerat consequatur. Nihil et ut temporibus culpa in impedit necessitatibus ut quis. In ut perferendis ut aut consectetur aperiam. Rerum ratione error et non tempore sint. Suscipit ut maiores expedita. Veniam corporis quia excepturi ipsum et accusantium mollitia totam nobis. Aut nihil sequi doloribus praesentium facilis.']",
