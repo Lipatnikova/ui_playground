@@ -6,13 +6,13 @@
       "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
       "children" : [ {
         "name" : "Добавление нового контакта в список менеджера",
-        "uid" : "63db0b8423ad8cd5",
+        "uid" : "3c2844b32351e5ec",
         "parentUid" : "d39bf102e1e5bf5134ee723b8fd3f516",
         "status" : "broken",
         "time" : {
-          "start" : 1713348536888,
-          "stop" : 1713348541934,
-          "duration" : 5046
+          "start" : 1713348830999,
+          "stop" : 1713348835863,
+          "duration" : 4864
         },
         "flaky" : false,
         "newFailed" : false,
