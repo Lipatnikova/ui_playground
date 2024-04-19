@@ -1,0 +1,479 @@
+{
+  "uid" : "1fed3101f88db5c6",
+  "name" : "Добавление нового контакта в список менеджера",
+  "fullName" : "tests.test_create_contacts.TestCreateContactsPage#test_create_contact_page",
+  "historyId" : "a014a10dde751d424ca48a7162eae47e",
+  "time" : {
+    "start" : 1713509443293,
+    "stop" : 1713509448834,
+    "duration" : 5541
+  },
+  "description" : "\n    Цель задачи: протестировать функциональность добавления новых контактов в систему CRM. \n    Эта функция должна позволять менеджерам по продажам добавлять новых клиентов в список \n    контактов для дальнейшего взаимодействия с ними.",
+  "descriptionHtml" : "<pre><code>Цель задачи: протестировать функциональность добавления новых контактов в систему CRM. \nЭта функция должна позволять менеджерам по продажам добавлять новых клиентов в список \nконтактов для дальнейшего взаимодействия с ними.\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: The created user: Tracy Owens is missing from the contacts list: ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', 'Virgil Mertz', 'Tonya Bogan', 'Marian Paucek', 'Shirley Olson', 'Veronica Feest', 'Randolph Homenick', 'Delbert Johnson', 'Gertrude Kulas', 'Minnie Deckow', 'Carlos Wehner', 'Lester Schmitt', 'Georgia Turcotte', 'Marc Kshlerin', 'Laura Bednar', 'Natalie Kutch', 'Jane Hills', 'Kelly Walker', 'Kelvin Langworth', 'Bernice Koepp'].\nassert 'Tracy Owens' in ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', ...]",
+  "statusTrace" : "self = <test_create_contacts.TestCreateContactsPage object at 0x7eff68bcce90>\nreset_bd = <function reset_bd.<locals>.reset_bd at 0x7eff68c5aca0>\n\n    @pytest.mark.regression_tests\n    @allure.testcase('UI-1')\n    @allure.title('Добавление нового контакта в список менеджера')\n    @allure.description('''\n    Цель задачи: протестировать функциональность добавления новых контактов в систему CRM.\n    Эта функция должна позволять менеджерам по продажам добавлять новых клиентов в список\n    контактов для дальнейшего взаимодействия с ними.''')\n    def test_create_contact_page(self, reset_bd):\n        self.main_page.open_main_page()\n        self.main_page.click_tab_contacts()\n        self.contacts_page.click_btn_new_contact()\n        first_name = self.create_contact_page.enter_first_name()\n        last_name = self.create_contact_page.enter_last_name()\n        title = self.create_contact_page.enter_title()\n        email = self.create_contact_page.enter_email()\n        manager_name = self.create_contact_page.choose_account_manager()\n        expected_full_name = f'{first_name} {last_name}'\n        expected_contact = [expected_full_name, title, email, manager_name]\n        self.create_contact_page.click_btn_save()\n        full_name = self.show_contact_page.extract_full_name_contact()\n        expected_title = self.show_contact_page.extract_title_contact()\n        with allure.step('Проверить, что полное имя созданного контакта соответствует '\n                         'данным введенным при создании контакта'):\n            assert full_name in expected_contact, \\\n                (f\"Show contact page hasn't expected full name: {expected_full_name}.\"\n                 f\"Actual full name: {full_name}.\")\n        with allure.step('Проверить, что title созданного контакта соответствует '\n                         'данным введенным при создании контакта'):\n            assert title in expected_contact, \\\n                (f\"Show contact page hasn't expected title: {title}.\"\n                 f\"Actual title: {expected_title}.\")\n        with allure.step('Проверить, что добавленный контакт отображается в списке контактов'):\n            self.main_page.click_tab_contacts()\n            list_contacts = self.contacts_page.extract_full_names_contacts()\n>           assert expected_full_name in list_contacts, \\\n                f'The created user: {expected_full_name} is missing from the contacts list: {list_contacts}.'\nE           AssertionError: The created user: Tracy Owens is missing from the contacts list: ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', 'Virgil Mertz', 'Tonya Bogan', 'Marian Paucek', 'Shirley Olson', 'Veronica Feest', 'Randolph Homenick', 'Delbert Johnson', 'Gertrude Kulas', 'Minnie Deckow', 'Carlos Wehner', 'Lester Schmitt', 'Georgia Turcotte', 'Marc Kshlerin', 'Laura Bednar', 'Natalie Kutch', 'Jane Hills', 'Kelly Walker', 'Kelvin Langworth', 'Bernice Koepp'].\nE           assert 'Tracy Owens' in ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', ...]\n\ntests/test_create_contacts.py:42: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "reset_bd",
+    "time" : {
+      "start" : 1713509443293,
+      "stop" : 1713509443293,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1713509443293,
+      "stop" : 1713509443293,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1713509442894,
+      "stop" : 1713509443293,
+      "duration" : 399
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1713509442874,
+      "stop" : 1713509442894,
+      "duration" : 20
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n    Цель задачи: протестировать функциональность добавления новых контактов в систему CRM. \n    Эта функция должна позволять менеджерам по продажам добавлять новых клиентов в список \n    контактов для дальнейшего взаимодействия с ними.",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: The created user: Tracy Owens is missing from the contacts list: ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', 'Virgil Mertz', 'Tonya Bogan', 'Marian Paucek', 'Shirley Olson', 'Veronica Feest', 'Randolph Homenick', 'Delbert Johnson', 'Gertrude Kulas', 'Minnie Deckow', 'Carlos Wehner', 'Lester Schmitt', 'Georgia Turcotte', 'Marc Kshlerin', 'Laura Bednar', 'Natalie Kutch', 'Jane Hills', 'Kelly Walker', 'Kelvin Langworth', 'Bernice Koepp'].\nassert 'Tracy Owens' in ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', ...]",
+    "statusTrace" : "self = <test_create_contacts.TestCreateContactsPage object at 0x7eff68bcce90>\nreset_bd = <function reset_bd.<locals>.reset_bd at 0x7eff68c5aca0>\n\n    @pytest.mark.regression_tests\n    @allure.testcase('UI-1')\n    @allure.title('Добавление нового контакта в список менеджера')\n    @allure.description('''\n    Цель задачи: протестировать функциональность добавления новых контактов в систему CRM.\n    Эта функция должна позволять менеджерам по продажам добавлять новых клиентов в список\n    контактов для дальнейшего взаимодействия с ними.''')\n    def test_create_contact_page(self, reset_bd):\n        self.main_page.open_main_page()\n        self.main_page.click_tab_contacts()\n        self.contacts_page.click_btn_new_contact()\n        first_name = self.create_contact_page.enter_first_name()\n        last_name = self.create_contact_page.enter_last_name()\n        title = self.create_contact_page.enter_title()\n        email = self.create_contact_page.enter_email()\n        manager_name = self.create_contact_page.choose_account_manager()\n        expected_full_name = f'{first_name} {last_name}'\n        expected_contact = [expected_full_name, title, email, manager_name]\n        self.create_contact_page.click_btn_save()\n        full_name = self.show_contact_page.extract_full_name_contact()\n        expected_title = self.show_contact_page.extract_title_contact()\n        with allure.step('Проверить, что полное имя созданного контакта соответствует '\n                         'данным введенным при создании контакта'):\n            assert full_name in expected_contact, \\\n                (f\"Show contact page hasn't expected full name: {expected_full_name}.\"\n                 f\"Actual full name: {full_name}.\")\n        with allure.step('Проверить, что title созданного контакта соответствует '\n                         'данным введенным при создании контакта'):\n            assert title in expected_contact, \\\n                (f\"Show contact page hasn't expected title: {title}.\"\n                 f\"Actual title: {expected_title}.\")\n        with allure.step('Проверить, что добавленный контакт отображается в списке контактов'):\n            self.main_page.click_tab_contacts()\n            list_contacts = self.contacts_page.extract_full_names_contacts()\n>           assert expected_full_name in list_contacts, \\\n                f'The created user: {expected_full_name} is missing from the contacts list: {list_contacts}.'\nE           AssertionError: The created user: Tracy Owens is missing from the contacts list: ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', 'Virgil Mertz', 'Tonya Bogan', 'Marian Paucek', 'Shirley Olson', 'Veronica Feest', 'Randolph Homenick', 'Delbert Johnson', 'Gertrude Kulas', 'Minnie Deckow', 'Carlos Wehner', 'Lester Schmitt', 'Georgia Turcotte', 'Marc Kshlerin', 'Laura Bednar', 'Natalie Kutch', 'Jane Hills', 'Kelly Walker', 'Kelvin Langworth', 'Bernice Koepp'].\nE           assert 'Tracy Owens' in ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', ...]\n\ntests/test_create_contacts.py:42: AssertionError",
+    "steps" : [ {
+      "name" : "Открыть страницу qa-playground",
+      "time" : {
+        "start" : 1713509443293,
+        "stop" : 1713509445989,
+        "duration" : 2696
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Нажать на вкладку CONTACTS",
+      "time" : {
+        "start" : 1713509445989,
+        "stop" : 1713509446139,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Нажать кнопку NEW CONTACT",
+      "time" : {
+        "start" : 1713509446139,
+        "stop" : 1713509446298,
+        "duration" : 159
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Заполнить поле First name валидными данными",
+      "time" : {
+        "start" : 1713509446298,
+        "stop" : 1713509446433,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Заполнить поле Last name валидными данными",
+      "time" : {
+        "start" : 1713509446433,
+        "stop" : 1713509446575,
+        "duration" : 142
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Заполнить поле Title валидными данными",
+      "time" : {
+        "start" : 1713509446575,
+        "stop" : 1713509446741,
+        "duration" : 166
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Заполнить поле Email валидными данными",
+      "time" : {
+        "start" : 1713509446741,
+        "stop" : 1713509446905,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Выбрать аккаунт менеджера из выпадающего списка",
+      "time" : {
+        "start" : 1713509446905,
+        "stop" : 1713509447121,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Нажать на кнопку SAVE",
+      "time" : {
+        "start" : 1713509447121,
+        "stop" : 1713509447571,
+        "duration" : 450
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Получить полное имя контакта",
+      "time" : {
+        "start" : 1713509447571,
+        "stop" : 1713509448106,
+        "duration" : 535
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Получить title контакта",
+      "time" : {
+        "start" : 1713509448106,
+        "stop" : 1713509448134,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что полное имя созданного контакта соответствует данным введенным при создании контакта",
+      "time" : {
+        "start" : 1713509448134,
+        "stop" : 1713509448134,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что title созданного контакта соответствует данным введенным при создании контакта",
+      "time" : {
+        "start" : 1713509448134,
+        "stop" : 1713509448134,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что добавленный контакт отображается в списке контактов",
+      "time" : {
+        "start" : 1713509448134,
+        "stop" : 1713509448834,
+        "duration" : 700
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: The created user: Tracy Owens is missing from the contacts list: ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', 'Virgil Mertz', 'Tonya Bogan', 'Marian Paucek', 'Shirley Olson', 'Veronica Feest', 'Randolph Homenick', 'Delbert Johnson', 'Gertrude Kulas', 'Minnie Deckow', 'Carlos Wehner', 'Lester Schmitt', 'Georgia Turcotte', 'Marc Kshlerin', 'Laura Bednar', 'Natalie Kutch', 'Jane Hills', 'Kelly Walker', 'Kelvin Langworth', 'Bernice Koepp'].\nassert 'Tracy Owens' in ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', ...]\n",
+      "statusTrace" : "  File \"/usr/workspace/tests/test_create_contacts.py\", line 42, in test_create_contact_page\n    assert expected_full_name in list_contacts, \\\n",
+      "steps" : [ {
+        "name" : "Нажать на вкладку CONTACTS",
+        "time" : {
+          "start" : 1713509448134,
+          "stop" : 1713509448353,
+          "duration" : 219
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Получить список полных имен из списка контактов менеджера",
+        "time" : {
+          "start" : 1713509448353,
+          "stop" : 1713509448834,
+          "duration" : 481
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 16,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "reset_bd::0",
+    "time" : {
+      "start" : 1713509448866,
+      "stop" : 1713509448866,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1713509448866,
+      "stop" : 1713509448951,
+      "duration" : 85
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "regression_tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_contacts"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateContactsPage"
+  }, {
+    "name" : "host",
+    "value" : "727a782b3a4b"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_create_contacts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "UI-1",
+    "url" : "UI-1",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "3c2844b32351e5ec",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+        "time" : {
+          "start" : 1713348830999,
+          "stop" : 1713348835863,
+          "duration" : 4864
+        }
+      }, {
+        "uid" : "63db0b8423ad8cd5",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+        "time" : {
+          "start" : 1713348536888,
+          "stop" : 1713348541934,
+          "duration" : 5046
+        }
+      }, {
+        "uid" : "7fae2207b0b10f36",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+        "time" : {
+          "start" : 1713347926324,
+          "stop" : 1713347926324,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "599c8f7f534b33f9",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+        "time" : {
+          "start" : 1713293674184,
+          "stop" : 1713293679326,
+          "duration" : 5142
+        }
+      }, {
+        "uid" : "cc7a00465b6f3cdf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1712346044396,
+          "stop" : 1712346049360,
+          "duration" : 4964
+        }
+      }, {
+        "uid" : "1de1b312e8efe51d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1712315962391,
+          "stop" : 1712315966821,
+          "duration" : 4430
+        }
+      } ]
+    },
+    "tags" : [ "regression_tests" ]
+  },
+  "source" : "1fed3101f88db5c6.json",
+  "parameterValues" : [ ]
+}

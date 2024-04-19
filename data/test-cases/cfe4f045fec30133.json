@@ -1,11 +1,11 @@
 {
-  "uid" : "8d0a4457d9f97fe6",
+  "uid" : "cfe4f045fec30133",
   "name" : "Экспорт списка контактов в файл формата .csv",
   "fullName" : "tests.test_show_contact_page.TestShowContact#test_export_contact_list_to_csv_file",
   "historyId" : "ed6359e7d436eb5010e28c3d52cc1d39",
   "time" : {
-    "start" : 1713348842064,
-    "stop" : 1713348842064,
+    "start" : 1713509455579,
+    "stop" : 1713509455579,
     "duration" : 0
   },
   "description" : "\n    Цель задачи: протестировать функциональность экспорта выбранных контактов в файл CSV, \n    позволяющее передавать определенные наборы контактов в другие системы CRM.",
@@ -18,8 +18,8 @@
   "beforeStages" : [ {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1713348830590,
-      "stop" : 1713348830610,
+      "start" : 1713509442874,
+      "stop" : 1713509442894,
       "duration" : 20
     },
     "status" : "passed",
@@ -49,7 +49,7 @@
     "value" : "TestShowContact"
   }, {
     "name" : "host",
-    "value" : "579c16998161"
+    "value" : "727a782b3a4b"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -85,12 +85,21 @@
       "statistic" : {
         "failed" : 0,
         "broken" : 0,
-        "skipped" : 4,
+        "skipped" : 5,
         "passed" : 0,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "8d0a4457d9f97fe6",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: unconditional skip",
+        "time" : {
+          "start" : 1713348842064,
+          "stop" : 1713348842064,
+          "duration" : 0
+        }
+      }, {
         "uid" : "780ebe6dc4e6a603",
         "status" : "skipped",
         "statusDetails" : "Skipped: unconditional skip",
@@ -121,6 +130,6 @@
     },
     "tags" : [ "@pytest.mark.skip", "regression_tests" ]
   },
-  "source" : "8d0a4457d9f97fe6.json",
+  "source" : "cfe4f045fec30133.json",
   "parameterValues" : [ "'last_seen'" ]
 }

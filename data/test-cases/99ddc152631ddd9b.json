@@ -1,11 +1,11 @@
 {
-  "uid" : "a58f40c8bd7d1cad",
+  "uid" : "99ddc152631ddd9b",
   "name" : "Экспорт списка контактов в файл формата .csv",
   "fullName" : "tests.test_show_contact_page.TestShowContact#test_export_contact_list_to_csv_file",
-  "historyId" : "99557cc0dfaae86996070da8dd058cef",
+  "historyId" : "086d7665ac96da8e464e3d164b755ce3",
   "time" : {
-    "start" : 1713348842063,
-    "stop" : 1713348842063,
+    "start" : 1713509455577,
+    "stop" : 1713509455577,
     "duration" : 0
   },
   "description" : "\n    Цель задачи: протестировать функциональность экспорта выбранных контактов в файл CSV, \n    позволяющее передавать определенные наборы контактов в другие системы CRM.",
@@ -18,8 +18,8 @@
   "beforeStages" : [ {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1713348830590,
-      "stop" : 1713348830610,
+      "start" : 1713509442874,
+      "stop" : 1713509442894,
       "duration" : 20
     },
     "status" : "passed",
@@ -49,7 +49,7 @@
     "value" : "TestShowContact"
   }, {
     "name" : "host",
-    "value" : "579c16998161"
+    "value" : "727a782b3a4b"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -68,7 +68,7 @@
   } ],
   "parameters" : [ {
     "name" : "sort_by",
-    "value" : "'first_name'"
+    "value" : "'last_name'"
   } ],
   "links" : [ {
     "name" : "UI-5",
@@ -85,42 +85,51 @@
       "statistic" : {
         "failed" : 0,
         "broken" : 0,
-        "skipped" : 4,
+        "skipped" : 5,
         "passed" : 0,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
-        "uid" : "e5bfcb26349700d4",
+        "uid" : "c271bc9c3e3a1a0",
         "status" : "skipped",
         "statusDetails" : "Skipped: unconditional skip",
         "time" : {
-          "start" : 1713348548370,
-          "stop" : 1713348548370,
+          "start" : 1713348842061,
+          "stop" : 1713348842061,
           "duration" : 0
         }
       }, {
-        "uid" : "f497721d88fab96e",
+        "uid" : "b78b653cf10c81ad",
         "status" : "skipped",
         "statusDetails" : "Skipped: unconditional skip",
         "time" : {
-          "start" : 1713347927100,
-          "stop" : 1713347927100,
+          "start" : 1713348548369,
+          "stop" : 1713348548369,
           "duration" : 0
         }
       }, {
-        "uid" : "d8c28105d89d1485",
+        "uid" : "bad008e5ee8422b4",
         "status" : "skipped",
         "statusDetails" : "Skipped: unconditional skip",
         "time" : {
-          "start" : 1713293685588,
-          "stop" : 1713293685588,
+          "start" : 1713347927098,
+          "stop" : 1713347927098,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "84b7934fda7c451f",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: unconditional skip",
+        "time" : {
+          "start" : 1713293685587,
+          "stop" : 1713293685587,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ "@pytest.mark.skip", "regression_tests" ]
   },
-  "source" : "a58f40c8bd7d1cad.json",
-  "parameterValues" : [ "'first_name'" ]
+  "source" : "99ddc152631ddd9b.json",
+  "parameterValues" : [ "'last_name'" ]
 }

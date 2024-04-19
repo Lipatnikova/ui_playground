@@ -3,12 +3,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 4,
+      "skipped" : 5,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "99ddc152631ddd9b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1713509455577,
+        "stop" : 1713509455577,
+        "duration" : 0
+      }
+    }, {
       "uid" : "c271bc9c3e3a1a0",
       "status" : "skipped",
       "statusDetails" : "Skipped: unconditional skip",
@@ -48,14 +57,23 @@
   },
   "a014a10dde751d424ca48a7162eae47e" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 4,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "1fed3101f88db5c6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: The created user: Tracy Owens is missing from the contacts list: ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', 'Virgil Mertz', 'Tonya Bogan', 'Marian Paucek', 'Shirley Olson', 'Veronica Feest', 'Randolph Homenick', 'Delbert Johnson', 'Gertrude Kulas', 'Minnie Deckow', 'Carlos Wehner', 'Lester Schmitt', 'Georgia Turcotte', 'Marc Kshlerin', 'Laura Bednar', 'Natalie Kutch', 'Jane Hills', 'Kelly Walker', 'Kelvin Langworth', 'Bernice Koepp'].\nassert 'Tracy Owens' in ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', ...]",
+      "time" : {
+        "start" : 1713509443293,
+        "stop" : 1713509448834,
+        "duration" : 5541
+      }
+    }, {
       "uid" : "3c2844b32351e5ec",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
@@ -113,12 +131,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 4,
+      "skipped" : 5,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "cfe4f045fec30133",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1713509455579,
+        "stop" : 1713509455579,
+        "duration" : 0
+      }
+    }, {
       "uid" : "8d0a4457d9f97fe6",
       "status" : "skipped",
       "statusDetails" : "Skipped: unconditional skip",
@@ -160,12 +187,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 4,
+      "skipped" : 5,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "71f9d409a13d680e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1713509455578,
+        "stop" : 1713509455578,
+        "duration" : 0
+      }
+    }, {
       "uid" : "a58f40c8bd7d1cad",
       "status" : "skipped",
       "statusDetails" : "Skipped: unconditional skip",
@@ -207,12 +243,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 4,
+      "skipped" : 5,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "5da75e27a26a5a65",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL after click tab Dashboard msg: 'Something went wrong A client error occurred and your request couldn't be completed.'\n\nAssertionError: Note with Prepare push drug bad write must audience. was not added to main page.Actual text by My Latest Notes list: ['Qui error facere nihil accusamus nisi rerum corrupti facere. Magnam ad optio tempora. Officia nobis ratione voluptatem. Eveniet quas occaecati quibusdam. Dolores fugit itaque harum. Et deserunt aliquid itaque necessitatibus possimus hic rerum. Nihil rem temporibus. Unde sunt sunt itaque illum animi fugiat perspiciatis consequatur. Et quis velit odio doloremque eveniet error et optio quas. Nulla vitae dolores optio dolorem nulla. Quibusdam sunt vel numquam quam et et aut. Ut sed pariatur quia. Iste nihil voluptas nobis voluptas corrupti sed. Illo modi alias a praesentium tempore nobis dolore veritatis. Error quasi laborum id necessitatibus dolorem qui molestias porro. Commodi omnis sint eum at. Itaque quibusdam incidunt non sit. Numquam quam autem. Mollitia facilis explicabo ut. Ea qui nisi enim aut velit.', 'Sunt id dolore et. Repellat aut facilis sequi qui voluptatem aut. Fugit aut architecto sint sed ducimus eos ab.', 'Rerum perferendis iste quos rerum officiis quae atque repellat numquam. Deleniti quam molestiae exercitationem. In sunt natus et aliquid animi aut. Facere molestias necessitatibus perferendis blanditiis qui animi. Velit nemo corporis eaque cupiditate. Consectetur voluptas numquam rerum. Perferendis delectus dignissimos culpa repellat id qui deserunt vitae. Expedita dolorem tempora reiciendis sed dolores ut sit cum dolor. Reiciendis ipsa illum vero corrupti voluptatum aut. Nemo amet vitae vitae quod sint possimus blanditiis earum. Nam eaque et.', 'Incidunt ad omnis quos necessitatibus vero debitis. Culpa dicta optio. Officiis et labore laudantium eos qui. Totam necessitatibus voluptas ipsam vitae. Reprehenderit ut consectetur beatae sit odit dolores quia. Ratione fuga voluptatibus voluptatem qui facere impedit. Earum ut in eveniet quis ad. Aliquam tenetur fugit reprehenderit cum sint distinctio suscipit. Rerum quasi aut voluptatem aut maxime voluptates repellat ut. Exercitationem harum dicta quis. Excepturi doloribus mollitia illum. Quia qui nisi id corrupti molestiae perferendis sit distinctio possimus. Quam perferendis molestiae et recusandae tempora facilis. Rerum repellat id sint sequi. Doloribus explicabo impedit.', 'Autem voluptas nisi placeat aliquam labore rem. Delectus iusto et fugiat labore corrupti quia expedita molestiae. Est atque nihil cupiditate. Sunt dolorum qui quae aut ex voluptate. Id voluptas velit. Totam architecto sit eveniet et ex qui sunt. Ea ratione omnis. Voluptatibus earum sint omnis dolores reprehenderit quia assumenda. Quo vel veritatis. Minus quod voluptatem quaerat consequatur. Nihil et ut temporibus culpa in impedit necessitatibus ut quis. In ut perferendis ut aut consectetur aperiam. Rerum ratione error et non tempore sint. Suscipit ut maiores expedita. Veniam corporis quia excepturi ipsum et accusantium mollitia totam nobis. Aut nihil sequi doloribus praesentium facilis.']\nassert 'Prepare push drug bad write must audience.' in ['Qui error facere nihil accusamus nisi rerum corrupti facere. Magnam ad optio tempora. Officia nobis ratione voluptatem. Eveniet quas occaecati quibusdam. Dolores fugit itaque harum. Et deserunt aliquid itaque necessitatibus possimus hic rerum. Nihil rem temporibus. Unde sunt sunt itaque illum animi fugiat perspiciatis consequatur. Et quis velit odio doloremque eveniet error et optio quas. Nulla vitae dolores optio dolorem nulla. Quibusdam sunt vel numquam quam et et aut. Ut sed pariatur quia. Iste nihil voluptas nobis voluptas corrupti sed. Illo modi alias a praesentium tempore nobis dolore veritatis. Error quasi laborum id necessitatibus dolorem qui molestias porro. Commodi omnis sint eum at. Itaque quibusdam incidunt non sit. Numquam quam autem. Mollitia facilis explicabo ut. Ea qui nisi enim aut velit.', 'Sunt id dolore et. Repellat aut facilis sequi qui voluptatem aut. Fugit aut architecto sint sed ducimus eos ab.', 'Rerum perferendis iste quos rerum officiis quae atque repellat numquam. Deleniti quam molestiae exercitationem. In sunt natus et aliquid animi aut. Facere molestias necessitatibus perferendis blanditiis qui animi. Velit nemo corporis eaque cupiditate. Consectet...ae sit odit dolores quia. Ratione fuga voluptatibus voluptatem qui facere impedit. Earum ut in eveniet quis ad. Aliquam tenetur fugit reprehenderit cum sint distinctio suscipit. Rerum quasi aut voluptatem aut maxime voluptates repellat ut. Exercitationem harum dicta quis. Excepturi doloribus mollitia illum. Quia qui nisi id corrupti molestiae perferendis sit distinctio possimus. Quam perferendis molestiae et recusandae tempora facilis. Rerum repellat id sint sequi. Doloribus explicabo impedit.', 'Autem voluptas nisi placeat aliquam labore rem. Delectus iusto et fugiat labore corrupti quia expedita molestiae. Est atque nihil cupiditate. Sunt dolorum qui quae aut ex voluptate. Id voluptas velit. Totam architecto sit eveniet et ex qui sunt. Ea ratione omnis. Voluptatibus earum sint omnis dolores reprehenderit quia assumenda. Quo vel veritatis. Minus quod voluptatem quaerat consequatur. Nihil et ut temporibus culpa in impedit necessitatibus ut quis. In ut perferendis ut aut consectetur aperiam. Rerum ratione error et non tempore sint. Suscipit ut maiores expedita. Veniam corporis quia excepturi ipsum et accusantium mollitia totam nobis. Aut nihil sequi doloribus praesentium facilis.']",
+      "time" : {
+        "start" : 1713509449283,
+        "stop" : 1713509455516,
+        "duration" : 6233
+      }
+    }, {
       "uid" : "2f600d54effbe051",
       "status" : "skipped",
       "statusDetails" : "XFAIL after click tab Dashboard msg: 'Something went wrong A client error occurred and your request couldn't be completed.'\n\nAssertionError: Note with Cut bar road police class chair. was not added to main page.Actual text by My Latest Notes list: ['Qui error facere nihil accusamus nisi rerum corrupti facere. Magnam ad optio tempora. Officia nobis ratione voluptatem. Eveniet quas occaecati quibusdam. Dolores fugit itaque harum. Et deserunt aliquid itaque necessitatibus possimus hic rerum. Nihil rem temporibus. Unde sunt sunt itaque illum animi fugiat perspiciatis consequatur. Et quis velit odio doloremque eveniet error et optio quas. Nulla vitae dolores optio dolorem nulla. Quibusdam sunt vel numquam quam et et aut. Ut sed pariatur quia. Iste nihil voluptas nobis voluptas corrupti sed. Illo modi alias a praesentium tempore nobis dolore veritatis. Error quasi laborum id necessitatibus dolorem qui molestias porro. Commodi omnis sint eum at. Itaque quibusdam incidunt non sit. Numquam quam autem. Mollitia facilis explicabo ut. Ea qui nisi enim aut velit.', 'Sunt id dolore et. Repellat aut facilis sequi qui voluptatem aut. Fugit aut architecto sint sed ducimus eos ab.', 'Rerum perferendis iste quos rerum officiis quae atque repellat numquam. Deleniti quam molestiae exercitationem. In sunt natus et aliquid animi aut. Facere molestias necessitatibus perferendis blanditiis qui animi. Velit nemo corporis eaque cupiditate. Consectetur voluptas numquam rerum. Perferendis delectus dignissimos culpa repellat id qui deserunt vitae. Expedita dolorem tempora reiciendis sed dolores ut sit cum dolor. Reiciendis ipsa illum vero corrupti voluptatum aut. Nemo amet vitae vitae quod sint possimus blanditiis earum. Nam eaque et.', 'Incidunt ad omnis quos necessitatibus vero debitis. Culpa dicta optio. Officiis et labore laudantium eos qui. Totam necessitatibus voluptas ipsam vitae. Reprehenderit ut consectetur beatae sit odit dolores quia. Ratione fuga voluptatibus voluptatem qui facere impedit. Earum ut in eveniet quis ad. Aliquam tenetur fugit reprehenderit cum sint distinctio suscipit. Rerum quasi aut voluptatem aut maxime voluptates repellat ut. Exercitationem harum dicta quis. Excepturi doloribus mollitia illum. Quia qui nisi id corrupti molestiae perferendis sit distinctio possimus. Quam perferendis molestiae et recusandae tempora facilis. Rerum repellat id sint sequi. Doloribus explicabo impedit.', 'Autem voluptas nisi placeat aliquam labore rem. Delectus iusto et fugiat labore corrupti quia expedita molestiae. Est atque nihil cupiditate. Sunt dolorum qui quae aut ex voluptate. Id voluptas velit. Totam architecto sit eveniet et ex qui sunt. Ea ratione omnis. Voluptatibus earum sint omnis dolores reprehenderit quia assumenda. Quo vel veritatis. Minus quod voluptatem quaerat consequatur. Nihil et ut temporibus culpa in impedit necessitatibus ut quis. In ut perferendis ut aut consectetur aperiam. Rerum ratione error et non tempore sint. Suscipit ut maiores expedita. Veniam corporis quia excepturi ipsum et accusantium mollitia totam nobis. Aut nihil sequi doloribus praesentium facilis.']\nassert 'Cut bar road police class chair.' in ['Qui error facere nihil accusamus nisi rerum corrupti facere. Magnam ad optio tempora. Officia nobis ratione voluptatem. Eveniet quas occaecati quibusdam. Dolores fugit itaque harum. Et deserunt aliquid itaque necessitatibus possimus hic rerum. Nihil rem temporibus. Unde sunt sunt itaque illum animi fugiat perspiciatis consequatur. Et quis velit odio doloremque eveniet error et optio quas. Nulla vitae dolores optio dolorem nulla. Quibusdam sunt vel numquam quam et et aut. Ut sed pariatur quia. Iste nihil voluptas nobis voluptas corrupti sed. Illo modi alias a praesentium tempore nobis dolore veritatis. Error quasi laborum id necessitatibus dolorem qui molestias porro. Commodi omnis sint eum at. Itaque quibusdam incidunt non sit. Numquam quam autem. Mollitia facilis explicabo ut. Ea qui nisi enim aut velit.', 'Sunt id dolore et. Repellat aut facilis sequi qui voluptatem aut. Fugit aut architecto sint sed ducimus eos ab.', 'Rerum perferendis iste quos rerum officiis quae atque repellat numquam. Deleniti quam molestiae exercitationem. In sunt natus et aliquid animi aut. Facere molestias necessitatibus perferendis blanditiis qui animi. Velit nemo corporis eaque cupiditate. Consectet...ae sit odit dolores quia. Ratione fuga voluptatibus voluptatem qui facere impedit. Earum ut in eveniet quis ad. Aliquam tenetur fugit reprehenderit cum sint distinctio suscipit. Rerum quasi aut voluptatem aut maxime voluptates repellat ut. Exercitationem harum dicta quis. Excepturi doloribus mollitia illum. Quia qui nisi id corrupti molestiae perferendis sit distinctio possimus. Quam perferendis molestiae et recusandae tempora facilis. Rerum repellat id sint sequi. Doloribus explicabo impedit.', 'Autem voluptas nisi placeat aliquam labore rem. Delectus iusto et fugiat labore corrupti quia expedita molestiae. Est atque nihil cupiditate. Sunt dolorum qui quae aut ex voluptate. Id voluptas velit. Totam architecto sit eveniet et ex qui sunt. Ea ratione omnis. Voluptatibus earum sint omnis dolores reprehenderit quia assumenda. Quo vel veritatis. Minus quod voluptatem quaerat consequatur. Nihil et ut temporibus culpa in impedit necessitatibus ut quis. In ut perferendis ut aut consectetur aperiam. Rerum ratione error et non tempore sint. Suscipit ut maiores expedita. Veniam corporis quia excepturi ipsum et accusantium mollitia totam nobis. Aut nihil sequi doloribus praesentium facilis.']",

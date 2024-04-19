@@ -1,26 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+      "name" : "AssertionError: The created user: Tracy Owens is missing from the contacts list: ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', 'Virgil Mertz', 'Tonya Bogan', 'Marian Paucek', 'Shirley Olson', 'Veronica Feest', 'Randolph Homenick', 'Delbert Johnson', 'Gertrude Kulas', 'Minnie Deckow', 'Carlos Wehner', 'Lester Schmitt', 'Georgia Turcotte', 'Marc Kshlerin', 'Laura Bednar', 'Natalie Kutch', 'Jane Hills', 'Kelly Walker', 'Kelvin Langworth', 'Bernice Koepp'].\nassert 'Tracy Owens' in ['Garry Gusikowski', 'Mattie Beer', 'Dianne Bradtke', 'Donald Yost', 'Sandra King', 'Percy Ward', ...]",
       "children" : [ {
         "name" : "Добавление нового контакта в список менеджера",
-        "uid" : "3c2844b32351e5ec",
-        "parentUid" : "d39bf102e1e5bf5134ee723b8fd3f516",
-        "status" : "broken",
+        "uid" : "1fed3101f88db5c6",
+        "parentUid" : "156e4d0c5978eb61a4106fc91ec9fb03",
+        "status" : "failed",
         "time" : {
-          "start" : 1713348830999,
-          "stop" : 1713348835863,
-          "duration" : 4864
+          "start" : 1713509443293,
+          "stop" : 1713509448834,
+          "duration" : 5541
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "d39bf102e1e5bf5134ee723b8fd3f516"
+      "uid" : "156e4d0c5978eb61a4106fc91ec9fb03"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
   "name" : "categories"
 }

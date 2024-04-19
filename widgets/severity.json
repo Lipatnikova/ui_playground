@@ -1,51 +1,51 @@
 [ {
-  "uid" : "a58f40c8bd7d1cad",
-  "name" : "Экспорт списка контактов в файл формата .csv",
-  "time" : {
-    "start" : 1713348842063,
-    "stop" : 1713348842063,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "8d0a4457d9f97fe6",
-  "name" : "Экспорт списка контактов в файл формата .csv",
-  "time" : {
-    "start" : 1713348842064,
-    "stop" : 1713348842064,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "c271bc9c3e3a1a0",
-  "name" : "Экспорт списка контактов в файл формата .csv",
-  "time" : {
-    "start" : 1713348842061,
-    "stop" : 1713348842061,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "2f600d54effbe051",
+  "uid" : "5da75e27a26a5a65",
   "name" : "Добавление заметки к контакту из списка контактов менеджера",
   "time" : {
-    "start" : 1713348836335,
-    "stop" : 1713348842001,
-    "duration" : 5666
+    "start" : 1713509449283,
+    "stop" : 1713509455516,
+    "duration" : 6233
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "3c2844b32351e5ec",
+  "uid" : "1fed3101f88db5c6",
   "name" : "Добавление нового контакта в список менеджера",
   "time" : {
-    "start" : 1713348830999,
-    "stop" : 1713348835863,
-    "duration" : 4864
+    "start" : 1713509443293,
+    "stop" : 1713509448834,
+    "duration" : 5541
   },
-  "status" : "broken",
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "cfe4f045fec30133",
+  "name" : "Экспорт списка контактов в файл формата .csv",
+  "time" : {
+    "start" : 1713509455579,
+    "stop" : 1713509455579,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "71f9d409a13d680e",
+  "name" : "Экспорт списка контактов в файл формата .csv",
+  "time" : {
+    "start" : 1713509455578,
+    "stop" : 1713509455578,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "99ddc152631ddd9b",
+  "name" : "Экспорт списка контактов в файл формата .csv",
+  "time" : {
+    "start" : 1713509455577,
+    "stop" : 1713509455577,
+    "duration" : 0
+  },
+  "status" : "skipped",
   "severity" : "normal"
 } ]
